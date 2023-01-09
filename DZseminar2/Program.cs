@@ -51,3 +51,5 @@ else
 {
     Console.WriteLine("Нет, это не выходной(");
 }
+
+
