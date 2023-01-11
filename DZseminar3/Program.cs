@@ -50,3 +50,4 @@ for (int c = 1; c <=a; c++)
     Console.Write(c*c*c + " | ");
 }
 Console.WriteLine(" - таблица кубов чисел от 1 до " + a);
+
