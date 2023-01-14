@@ -74,23 +74,43 @@
 //Задача 29: Напишите программу, которая задаёт массив 
 //из 8 целых чисел с клавиатуры и далее выводит массив на экран в одну строку.
 
-int[] array = new int[8];
-try
+// int[] array = new int[8];
+// try
+// {
+// for (int i = 0; i < 8; i++)
+// {
+//     Console.Write($"Введите элемент массива под индексом {i}:");
+//     array[i] = int.Parse(Console.ReadLine());
+// }
+
+// void Print(int[] col2)
+// {
+//     foreach (int item in col2) Console.Write(item + " ");
+// }
+
+// Print(array);
+// }
+// catch
+// {
+//     Console.WriteLine("надо было вводить именно целое число!");
+// }
+
+//Задача 27. - HARD необязательная Напишите программу, которая принимает 
+//на вход целое или дробное число и выдаёт количество цифр в числе.
+
+Console.WriteLine("Введите число");
+double N = Convert.ToDouble(Console.ReadLine());
+int a = 0; 
+
+
+for (int i = 1; i < N; i = i * 10) 
 {
-for (int i = 0; i < 8; i++)
-{
-    Console.Write($"Введите элемент массива под индексом {i}:");
-    array[i] = int.Parse(Console.ReadLine());
+    a += 1;
 }
 
-void Print(int[] col2)
+for (int i = 1; ((N * i) % 1) != 0; i = i * 10) 
 {
-    foreach (int item in col2) Console.Write(item + " ");
+    a += 1;
 }
 
-Print(array);
-}
-catch
-{
-    Console.WriteLine("надо было вводить именно целое число!");
-}
+Console.WriteLine(a);
