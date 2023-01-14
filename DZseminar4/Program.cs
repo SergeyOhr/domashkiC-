@@ -13,7 +13,7 @@
 // }
 // catch
 // {
-// Console.WriteLine("надо было вводить именно целое число");
+// Console.WriteLine("ошибка!");
 // }
 
 // int St(int z, int x)
