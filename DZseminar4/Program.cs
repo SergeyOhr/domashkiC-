@@ -80,7 +80,7 @@
 // for (int i = 0; i < 8; i++)
 // {
 //     Console.Write($"Введите элемент массива под индексом {i}:");
-//     array[i] = int.Parse(Console.ReadLine());
+//     array[i] = Convert.ToInt32(Console.ReadLine());
 // }
 
 // void Print(int[] col2)
@@ -98,19 +98,19 @@
 //Задача 27. - HARD необязательная Напишите программу, которая принимает 
 //на вход целое или дробное число и выдаёт количество цифр в числе.
 
-Console.WriteLine("Введите число");
-double N = Convert.ToDouble(Console.ReadLine());
-int a = 0; 
+// Console.WriteLine("Введите число");
+// double N = Convert.ToDouble(Console.ReadLine());
+// int a = 0; 
 
 
-for (int i = 1; i < N; i = i * 10) 
-{
-    a += 1;
-}
+// for (int i = 1; i < N; i = i * 10) 
+// {
+//     a += 1;
+// }
 
-for (int i = 1; ((N * i) % 1) != 0; i = i * 10) 
-{
-    a += 1;
-}
+// for (int i = 1; ((N * i) % 1) != 0; i = i * 10) 
+// {
+//     a += 1;
+// }
 
-Console.WriteLine(a);
+// Console.WriteLine(a);
